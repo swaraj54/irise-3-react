@@ -1,0 +1,3 @@
+Step 1 : use command - npx create-react-app frontend 
+Step 2 : cd frontend
+Step 3 : npm start 
