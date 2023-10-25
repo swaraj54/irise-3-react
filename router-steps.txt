@@ -1,0 +1,8 @@
+Step 1 : npm i react-router-dom
+
+Step 2 : Inside index.js add BrowerRouter component for App 
+
+Step 3 : Inside App.js import Routes and Route component and create
+ the routing with path and element attributes
+
+ 
