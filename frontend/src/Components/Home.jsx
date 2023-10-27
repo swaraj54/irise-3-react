@@ -1,8 +1,8 @@
 import './Styles/Home.css'
 
-function Home(){
+function Home() {
     return (
-        <div>Home</div>
+        <div id='hi'>Home</div>
     )
 }
 
