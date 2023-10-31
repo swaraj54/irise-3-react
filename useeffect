@@ -1,0 +1,12 @@
+import { useEffect } from "react"
+
+Type 1 : useEffect(() => { console.log("hiii") })
+       It'll execute the code when component renders on broweser and
+        also when state changes
+
+Type 2  : useEffect(() => { console.log("type 2") }, [])
+    It'll execute the code only ON the  FIRST TIME OF component render on browser.
+
+
+Type 3 ; useEffect(()=> {} , [state])
+    It'll execute the code on first time of render and whenever state changes.
