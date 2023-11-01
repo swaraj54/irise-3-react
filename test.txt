@@ -1,0 +1,18 @@
+Create a new project in the Google Developer Console:
+
+Go to the Google Developer Console and create a new project if you haven't already.
+Configure the OAuth consent screen:
+
+In the left sidebar, navigate to "OAuth consent screen."
+Choose the user type and enter the required details like the application name and authorized domains.
+Create OAuth client ID:
+
+After setting up the consent screen, go to the "Credentials" tab in the left sidebar.
+Click on the "Create credentials" button and select "OAuth client ID."
+Choose the application type (web application in this case) and enter the necessary details.
+Add the authorized redirect URI (if applicable).
+Retrieve the Client ID: 1059100419316-m0qvdfmbqg1egkhm9v2a3fkt8tu3un68.apps.googleusercontent.com
+secret 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
+
+Once the OAuth client ID is created, you'll see the client ID listed in the credentials section. It will look something like this: 1234567890-abcdefghijklmnopqrstuvwxyz1234567890.apps.googleusercontent.com.
+Copy this Client ID and replace 'YOUR_GOOGLE_CLIENT_ID' in your code with the actual Client ID.

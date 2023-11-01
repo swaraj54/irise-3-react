@@ -12,6 +12,8 @@ function UseEffect() {
         console.log("Hii from use effect hook")
     })
 
+    // it'll execute the code on first time of render on browser and whenever any state changes
+
     // const myFunction = () => {}
 
     return (

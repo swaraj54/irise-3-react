@@ -9,6 +9,8 @@ function UseEffectTwo() {
         console.log("Hi from type 2")
     }, [])
 
+    // it'll execute the code only on first time of render on browser.
+
     return (
         <div>
             <h1>counter : {counter}</h1>

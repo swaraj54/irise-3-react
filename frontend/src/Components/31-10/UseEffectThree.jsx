@@ -16,6 +16,8 @@ function UseEffectThree() {
         console.log("It'll execute the code on first time of render and whenever passed state changes.")
     }, [counter])
 
+    //  it'll execute the code on first time of render on browser and whenever passed state changes
+
     useEffect(() => {
         console.log("effect for counter 2")
     }, [counter2])
