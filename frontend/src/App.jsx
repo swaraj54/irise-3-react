@@ -15,6 +15,9 @@ import { useState } from 'react';
 import PropsDrillingTwo from './Components/02-11/PropsDrillingTwo';
 import Mapping from './Components/02-11/Mapping';
 import MappingTwo from './Components/02-11/MappingTwo';
+import ConditionalRendering from './Components/03-11/ConditionalRendering';
+import ConditionalRenderingTwo from './Components/03-11/ConditionalRenderingTwo';
+import ConditionalRenderingThree from './Components/03-11/ConditionalRenderingThree';
 
 function App() {
 
@@ -41,6 +44,9 @@ function App() {
         <Route path='/props-drilling-2' element={<PropsDrillingTwo counter={counter} IncrementCounter={IncrementCounter} />} />
         <Route path='/mapping' element={<Mapping />} />
         <Route path='/mapping-2' element={<MappingTwo />} />
+        <Route path='/condition-rendering' element={<ConditionalRendering />} />
+        <Route path='/condition-rendering-two' element={<ConditionalRenderingTwo />} />
+        <Route path='/condition-rendering-three' element={<ConditionalRenderingThree />} />
       </Routes>
     </div>
   );
