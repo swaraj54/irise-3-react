@@ -3,7 +3,6 @@ import './App.css';
 import Home from './Components/Home.jsx'
 import { Routes, Route } from 'react-router-dom';
 import Login from './Components/Login';
-import Register from './Components/Register';
 import UseState from './Components/27-10/UseState';
 import UseEffect from './Components/31-10/UseEffect';
 import UseEffectTwo from './Components/31-10/UseEffectTwo';
@@ -18,6 +17,7 @@ import MappingTwo from './Components/02-11/MappingTwo';
 import ConditionalRendering from './Components/03-11/ConditionalRendering';
 import ConditionalRenderingTwo from './Components/03-11/ConditionalRenderingTwo';
 import ConditionalRenderingThree from './Components/03-11/ConditionalRenderingThree';
+import Register from './Components/06-11/Register';
 
 function App() {
 
@@ -34,7 +34,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
         <Route path='/use-state' element={<UseState />} />
         <Route path='/use-effect' element={<UseEffect />} />
         <Route path='/use-effect-2' element={<UseEffectTwo />} />
@@ -47,6 +46,7 @@ function App() {
         <Route path='/condition-rendering' element={<ConditionalRendering />} />
         <Route path='/condition-rendering-two' element={<ConditionalRenderingTwo />} />
         <Route path='/condition-rendering-three' element={<ConditionalRenderingThree />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
     </div>
   );

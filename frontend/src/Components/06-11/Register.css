@@ -1,0 +1,31 @@
+#myForm {
+    border: 2px solid black;
+    width: 30%;
+    margin: auto;
+    height: 400px;
+}
+
+.label {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.input {
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.submit {
+    width: 80%;
+    height: 50px;
+    background-color: rgb(95, 234, 234);
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    font-size: 24px;
+    font-weight: bolder
+}
