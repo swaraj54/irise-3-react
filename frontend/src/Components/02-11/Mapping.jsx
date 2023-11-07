@@ -4,15 +4,12 @@ function Mapping() {
     const [students, setStudents] = useState(["Virat", "Rahul", "Rohit", "Surya"])
     return (
         <div>
-            {students.map((i) => (
-                <div>
-                    <h1>{i}</h1>
+            {students.map((name, index) => (
+                <div key={index}>
+                    <h1>{name}</h1>
                 </div>
             ))}
 
-            {students.map((i) => (
-                <h2>{i}</h2>
-            ))}
         </div>
     )
 }
