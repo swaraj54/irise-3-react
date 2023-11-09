@@ -18,6 +18,7 @@ import ConditionalRendering from './Components/03-11/ConditionalRendering';
 import ConditionalRenderingTwo from './Components/03-11/ConditionalRenderingTwo';
 import ConditionalRenderingThree from './Components/03-11/ConditionalRenderingThree';
 import Register from './Components/06-11/Register';
+import UseReducer from './Components/09-11/UseReducer';
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
         <Route path='/condition-rendering-two' element={<ConditionalRenderingTwo />} />
         <Route path='/condition-rendering-three' element={<ConditionalRenderingThree />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/use-reducer' element={<UseReducer />} />
       </Routes>
     </div>
   );
