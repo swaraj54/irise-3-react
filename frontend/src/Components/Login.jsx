@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { MyContext } from "./10-11-Context/AuthContext";
 
 
 function Login() {
     const [loginData, setLoginData] = useState({ email: "", password: "" })
     const router = useNavigate();
-    // console.log(loginData, "loginData")
+    const { state, LOGIN, LOGOUT } = useContext(MyContext)
+    console.log(state, "state")
 
     function handleChange(event) {
         // console.log(event.target.value, event.target.name)
@@ -18,8 +20,10 @@ function Login() {
             if (loginData.password.length > 7) {
                 try {
                     // const response = await axios.post('http://localhost:8000/login', { loginData })
-                    const response = { data: { success: true, message: "Login successfull." } }
+                    const response = { data: { success: true, message: "Login successfull.", user: { name: "Irise" }, token: "nubyvtcfrdctfvbghnhbgytfvcrdtfvbg" } }
                     if (response.data.success) {
+                        localStorage.setItem("TOKEN", response.data.token)
+                        LOGIN(response.data.user);
                         alert(response.data.message)
                         setLoginData({ email: "", password: "" })
                         router('/')

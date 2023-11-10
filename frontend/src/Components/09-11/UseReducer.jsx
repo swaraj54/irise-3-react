@@ -4,11 +4,11 @@ function reducer(state, action) {
     console.log(state, action, "state action")
     switch (action.type) {
         case "INCREMENT":
-            return { count: state.count + 1 }
+            return { ...state, count: state.count + 1 }
         case "DECREMENT":
-            return { count: state.count - 1 }
+            return { ...state, count: state.count - 1 }
         case "RESET":
-            return { count: 0 }
+            return { ...state, count: 0 }
         default:
             return state;
     }
@@ -17,7 +17,7 @@ function reducer(state, action) {
 
 function UseReducer() {
 
-    const initialState = { count: 0 }
+    const initialState = { count: 0, userId: "" }
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
